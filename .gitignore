@@ -54,6 +54,8 @@ desktop.ini
 # Keep assets folder tracked even with data rules above
 !assets/.gitkeep
 !assets/README.md
+!/week3/*.csv
+!/week3/*.db
 
 # Logs and temp
 *.log
