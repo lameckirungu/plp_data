@@ -1,7 +1,7 @@
 {
-  "run_at": "2026-07-24T03:46:51.541057+00:00",
+  "run_at": "2026-07-24T05:48:59.550481+00:00",
   "status": "SUCCESS",
-  "duration_seconds": 2.03,
+  "duration_seconds": 2.44,
   "row_counts_raw": {
     "loading_events": 2826,
     "dispatch_events": 2787,
