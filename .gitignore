@@ -57,6 +57,11 @@ desktop.ini
 !/week3/*.csv
 !/week3/*.db
 
+# Hackathon: track committed synthetic source data and pipeline evidence
+!/hackathon/data/raw/*.csv
+!/hackathon/data/processed/*.csv
+!/hackathon/reports/*.json
+
 # Logs and temp
 *.log
 *.tmp
