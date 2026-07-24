@@ -1,0 +1,507 @@
+{
+  "total_loadings": 2826,
+  "total_expected_revenue_kes": 12451078730.0,
+  "total_collected_revenue_kes": 11781663717.68,
+  "total_leakage_kes": 689140806.0234821,
+  "leakage_pct_of_expected_revenue": 5.534787956669534,
+  "leakage_by_category_kes": {
+    "dispatch_capture_gap_kes": 177775000.0,
+    "shrinkage_kes": 11685991.399999999,
+    "billing_gap_kes": 143337719.2,
+    "underbilling_kes": 16755970.003481966,
+    "collections_gap_kes": 339586125.41999996
+  },
+  "exception_count": 290,
+  "exception_rate_pct": 10.261854210898797,
+  "simulation_window_days": 45,
+  "avg_daily_leakage_kes": 15314240.133855157,
+  "annualized_leakage_kes": 5589697648.857132,
+  "by_depot": [
+    {
+      "depot": "Kisii",
+      "loadings": 475,
+      "expected_revenue_kes": 2077507380.0,
+      "collected_revenue_kes": 1948908584.5,
+      "total_leakage_kes": 135786034.87630704,
+      "dispatch_capture_gap_kes": 33773320.0,
+      "shrinkage_kes": 2617989.6,
+      "billing_gap_kes": 22153868.799999997,
+      "underbilling_kes": 2338224.526307029,
+      "collections_gap_kes": 74902631.95,
+      "leakage_pct_of_expected": 6.536007341466438
+    },
+    {
+      "depot": "Nakuru",
+      "loadings": 464,
+      "expected_revenue_kes": 2050260850.0,
+      "collected_revenue_kes": 1952250946.65,
+      "total_leakage_kes": 130267035.41,
+      "dispatch_capture_gap_kes": 38294390.0,
+      "shrinkage_kes": 2182743.0,
+      "billing_gap_kes": 18287749.0,
+      "underbilling_kes": 1499293.3199999998,
+      "collections_gap_kes": 70002860.09,
+      "leakage_pct_of_expected": 6.353681065021556
+    },
+    {
+      "depot": "Eldoret",
+      "loadings": 455,
+      "expected_revenue_kes": 2013723330.0,
+      "collected_revenue_kes": 1878180795.93,
+      "total_leakage_kes": 114519908.8,
+      "dispatch_capture_gap_kes": 28565440.0,
+      "shrinkage_kes": 2566563.3,
+      "billing_gap_kes": 18158984.6,
+      "underbilling_kes": 2669028.1,
+      "collections_gap_kes": 62559892.8,
+      "leakage_pct_of_expected": 5.686973334117353
+    },
+    {
+      "depot": "Kisumu",
+      "loadings": 466,
+      "expected_revenue_kes": 2034558840.0,
+      "collected_revenue_kes": 1916722674.69,
+      "total_leakage_kes": 111237489.98774193,
+      "dispatch_capture_gap_kes": 34855710.0,
+      "shrinkage_kes": 1548924.2999999998,
+      "billing_gap_kes": 27780858.5,
+      "underbilling_kes": 1756261.7677419356,
+      "collections_gap_kes": 45295735.42,
+      "leakage_pct_of_expected": 5.467400981519017
+    },
+    {
+      "depot": "Mombasa",
+      "loadings": 499,
+      "expected_revenue_kes": 2200276380.0,
+      "collected_revenue_kes": 2110380548.87,
+      "total_leakage_kes": 103537979.13593093,
+      "dispatch_capture_gap_kes": 23797360.0,
+      "shrinkage_kes": 825792.0,
+      "billing_gap_kes": 22680637.0,
+      "underbilling_kes": 5798332.1959309215,
+      "collections_gap_kes": 50435857.94,
+      "leakage_pct_of_expected": 4.705680617083701
+    },
+    {
+      "depot": "Nairobi",
+      "loadings": 467,
+      "expected_revenue_kes": 2074751950.0,
+      "collected_revenue_kes": 1975220167.04,
+      "total_leakage_kes": 93792357.81350207,
+      "dispatch_capture_gap_kes": 18488780.0,
+      "shrinkage_kes": 1943979.2,
+      "billing_gap_kes": 34275621.3,
+      "underbilling_kes": 2694830.0935020815,
+      "collections_gap_kes": 36389147.22,
+      "leakage_pct_of_expected": 4.520654038353938
+    }
+  ],
+  "by_product": [
+    {
+      "product": "AGO",
+      "loadings": 1308,
+      "expected_revenue_kes": 5660283680.0,
+      "collected_revenue_kes": 5333818373.2,
+      "total_leakage_kes": 336417995.9808174,
+      "dispatch_capture_gap_kes": 93197600.0,
+      "shrinkage_kes": 5953006.399999999,
+      "billing_gap_kes": 75126267.19999999,
+      "underbilling_kes": 6408979.720817376,
+      "collections_gap_kes": 155732142.66,
+      "leakage_pct_of_expected": 5.9434829595116225
+    },
+    {
+      "product": "PMS",
+      "loadings": 1246,
+      "expected_revenue_kes": 5721517050.0,
+      "collected_revenue_kes": 5424999796.05,
+      "total_leakage_kes": 303287381.6191625,
+      "dispatch_capture_gap_kes": 67987400.0,
+      "shrinkage_kes": 4162325.0,
+      "billing_gap_kes": 64098812.0,
+      "underbilling_kes": 7829545.419162511,
+      "collections_gap_kes": 159209299.2,
+      "leakage_pct_of_expected": 5.300821075402764
+    },
+    {
+      "product": "IK",
+      "loadings": 272,
+      "expected_revenue_kes": 1069278000.0,
+      "collected_revenue_kes": 1022845548.43,
+      "total_leakage_kes": 49435428.42350208,
+      "dispatch_capture_gap_kes": 16590000.0,
+      "shrinkage_kes": 1570660.0,
+      "billing_gap_kes": 4112640.0,
+      "underbilling_kes": 2517444.8635020815,
+      "collections_gap_kes": 24644683.56,
+      "leakage_pct_of_expected": 4.623253113175627
+    }
+  ],
+  "by_customer": [
+    {
+      "customer": "Baraka Downstream",
+      "loadings": 182,
+      "expected_revenue_kes": 798986450.0,
+      "collected_revenue_kes": 743451493.09,
+      "total_leakage_kes": 55903722.19,
+      "dispatch_capture_gap_kes": 13106050.0,
+      "shrinkage_kes": 302803.2,
+      "billing_gap_kes": 22149016.0,
+      "underbilling_kes": 523756.67999999993,
+      "collections_gap_kes": 19822096.31,
+      "leakage_pct_of_expected": 6.996829819829861
+    },
+    {
+      "customer": "Delta Oil Marketers",
+      "loadings": 144,
+      "expected_revenue_kes": 628672670.0,
+      "collected_revenue_kes": 572364707.21,
+      "total_leakage_kes": 55871771.90630703,
+      "dispatch_capture_gap_kes": 22997770.0,
+      "shrinkage_kes": 574362.0,
+      "billing_gap_kes": 3252215.9999999995,
+      "underbilling_kes": 614538.4563070291,
+      "collections_gap_kes": 28432885.450000003,
+      "leakage_pct_of_expected": 8.887259550555463
+    },
+    {
+      "customer": "Horizon Oil Marketers",
+      "loadings": 157,
+      "expected_revenue_kes": 699526770.0,
+      "collected_revenue_kes": 644897047.3,
+      "total_leakage_kes": 54481457.89,
+      "dispatch_capture_gap_kes": 17305580.0,
+      "shrinkage_kes": 428662.39999999997,
+      "billing_gap_kes": 18798648.5,
+      "underbilling_kes": 1202431.8499999999,
+      "collections_gap_kes": 16746135.14,
+      "leakage_pct_of_expected": 7.788330658167664
+    },
+    {
+      "customer": "Savannah Petroleum",
+      "loadings": 125,
+      "expected_revenue_kes": 548841670.0,
+      "collected_revenue_kes": 496845104.15,
+      "total_leakage_kes": 50541052.72,
+      "dispatch_capture_gap_kes": 17040960.0,
+      "shrinkage_kes": 582099.0,
+      "billing_gap_kes": 17002242.3,
+      "underbilling_kes": 298032.55,
+      "collections_gap_kes": 15617718.87,
+      "leakage_pct_of_expected": 9.208676287279717
+    },
+    {
+      "customer": "Nyanza Petroleum Co",
+      "loadings": 161,
+      "expected_revenue_kes": 712649450.0,
+      "collected_revenue_kes": 669295801.4399999,
+      "total_leakage_kes": 44079808.08,
+      "dispatch_capture_gap_kes": 5525120.0,
+      "shrinkage_kes": 1054544.0,
+      "billing_gap_kes": 6964571.0,
+      "underbilling_kes": 930489.56,
+      "collections_gap_kes": 29605083.52,
+      "leakage_pct_of_expected": 6.1853423278443564
+    },
+    {
+      "customer": "Highland Energy Co",
+      "loadings": 153,
+      "expected_revenue_kes": 671640600.0,
+      "collected_revenue_kes": 633449048.73,
+      "total_leakage_kes": 43552715.75,
+      "dispatch_capture_gap_kes": 8562800.0,
+      "shrinkage_kes": 0.0,
+      "billing_gap_kes": 21626011.799999997,
+      "underbilling_kes": 613145.59,
+      "collections_gap_kes": 12750758.36,
+      "leakage_pct_of_expected": 6.484526955338912
+    },
+    {
+      "customer": "Lakeview Energy",
+      "loadings": 106,
+      "expected_revenue_kes": 462931210.0,
+      "collected_revenue_kes": 441650215.26,
+      "total_leakage_kes": 37069381.93,
+      "dispatch_capture_gap_kes": 8598300.0,
+      "shrinkage_kes": 773023.4,
+      "billing_gap_kes": 5573543.5,
+      "underbilling_kes": 327419.33999999997,
+      "collections_gap_kes": 21797095.689999998,
+      "leakage_pct_of_expected": 8.007535704926873
+    },
+    {
+      "customer": "Uhuru Energy Partners",
+      "loadings": 125,
+      "expected_revenue_kes": 544212820.0,
+      "collected_revenue_kes": 517547800.34,
+      "total_leakage_kes": 34104167.7,
+      "dispatch_capture_gap_kes": 15772960.0,
+      "shrinkage_kes": 408454.0,
+      "billing_gap_kes": 0.0,
+      "underbilling_kes": 1482070.3900000001,
+      "collections_gap_kes": 16440683.31,
+      "leakage_pct_of_expected": 6.26669685951169
+    },
+    {
+      "customer": "Tsavo Energy Group",
+      "loadings": 156,
+      "expected_revenue_kes": 686118090.0,
+      "collected_revenue_kes": 646398920.22,
+      "total_leakage_kes": 33810624.503502086,
+      "dispatch_capture_gap_kes": 10770880.0,
+      "shrinkage_kes": 0.0,
+      "billing_gap_kes": 8588612.8,
+      "underbilling_kes": 728542.0735020813,
+      "collections_gap_kes": 13722589.63,
+      "leakage_pct_of_expected": 4.927814176055624
+    },
+    {
+      "customer": "Kilele Fuels",
+      "loadings": 139,
+      "expected_revenue_kes": 594793540.0,
+      "collected_revenue_kes": 575051363.11,
+      "total_leakage_kes": 31689580.42,
+      "dispatch_capture_gap_kes": 7601040.0,
+      "shrinkage_kes": 509832.0,
+      "billing_gap_kes": 0.0,
+      "underbilling_kes": 1062815.24,
+      "collections_gap_kes": 22515893.18,
+      "leakage_pct_of_expected": 5.327828614278494
+    }
+  ],
+  "multi_invoice_exception_count": 32,
+  "data_quality": {
+    "overall_status": "PASS",
+    "checks": [
+      {
+        "name": "schema:loading_events",
+        "status": "PASS",
+        "detail": "no violations"
+      },
+      {
+        "name": "schema:dispatch_events",
+        "status": "PASS",
+        "detail": "no violations"
+      },
+      {
+        "name": "schema:invoices",
+        "status": "PASS",
+        "detail": "no violations"
+      },
+      {
+        "name": "schema:payments",
+        "status": "PASS",
+        "detail": "no violations"
+      },
+      {
+        "name": "referential_integrity:dispatch_to_loading",
+        "status": "PASS",
+        "detail": "0 orphan rows (0.000%) referencing a non-existent parent"
+      },
+      {
+        "name": "referential_integrity:invoice_to_dispatch",
+        "status": "PASS",
+        "detail": "0 orphan rows (0.000%) referencing a non-existent parent"
+      },
+      {
+        "name": "referential_integrity:payment_to_invoice",
+        "status": "PASS",
+        "detail": "0 orphan rows (0.000%) referencing a non-existent parent"
+      }
+    ],
+    "issues": [
+      {
+        "table": "loading_events",
+        "check": "missing_customer",
+        "severity": "warning",
+        "count": 29,
+        "detail": ""
+      },
+      {
+        "table": "invoices",
+        "check": "missing_unit_price_backfilled",
+        "severity": "warning",
+        "count": 74,
+        "detail": ""
+      },
+      {
+        "table": "invoices",
+        "check": "dispatch_with_multiple_invoices",
+        "severity": "exception",
+        "count": 64,
+        "detail": ""
+      }
+    ]
+  },
+  "roi": {
+    "implementation_cost_kes": 75000000,
+    "total_annualized_leakage_kes": 5589697648.857132,
+    "steady_state_recoverable_annual_kes": 3377579422.1743393,
+    "year1_adoption_ramp_factor": 0.35,
+    "year1_realized_benefit_kes": 1182152797.7610188,
+    "net_benefit_year1_kes": 1107152797.7610188,
+    "roi_multiple_year1": 15.76203730348025,
+    "payback_period_months": 0.8,
+    "category_breakdown": [
+      {
+        "category": "dispatch_capture_gap_kes",
+        "annualized_leakage_kes": 1441952777.7777777,
+        "recovery_rate": 0.5,
+        "recoverable_kes": 720976388.8888888,
+        "rationale": "Needs gate-capture discipline (automated dispatch confirmation), not just software -- partial recovery in year one."
+      },
+      {
+        "category": "shrinkage_kes",
+        "annualized_leakage_kes": 94786374.68888888,
+        "recovery_rate": 0.4,
+        "recoverable_kes": 37914549.87555555,
+        "rationale": "Material transit loss often needs metering/infrastructure fixes outside this tool's scope -- flagged for investigation, not eliminated by reconciliation alone."
+      },
+      {
+        "category": "billing_gap_kes",
+        "annualized_leakage_kes": 1162628166.8444445,
+        "recovery_rate": 0.85,
+        "recoverable_kes": 988233941.8177778,
+        "rationale": "Pure dispatch-to-invoice matching automation -- the highest-confidence recovery category."
+      },
+      {
+        "category": "underbilling_kes",
+        "annualized_leakage_kes": 135909534.47268704,
+        "recovery_rate": 0.85,
+        "recoverable_kes": 115523104.30178398,
+        "rationale": "Volume-vs-invoice cross-check is a straightforward automated control."
+      },
+      {
+        "category": "collections_gap_kes",
+        "annualized_leakage_kes": 2754420795.0733333,
+        "recovery_rate": 0.55,
+        "recoverable_kes": 1514931437.2903335,
+        "rationale": "Automated dunning/aging alerts recover a majority of outstanding AR; some customer default is structural and will not close to zero."
+      }
+    ],
+    "note": "All KES figures are illustrative: they are computed by scaling a 45-day synthetic simulation (calibrated to plausible KPC depot volumes and ex-depot pricing, not live operational data) up to an annual run-rate. Treat them as a directional sizing of the opportunity, and re-run this same pipeline against real KPC extracts before using any number here in a board-level business case."
+  },
+  "executive_narrative": "Over a 45-day operating window, KPC's order-to-cash cycle leaked KES 689.1M against KES 12.45B of expected ex-depot revenue -- 5.5% of value shipped never converts to collected cash. Annualized, that is approximately KES 5.59B at current throughput.\n\nThe largest driver is **collections shortfalls** at KES 339.6M, followed by **dispatch capture gaps** at KES 177.8M. 290 of 2826 loadings (10.3%) carry at least one reconciliation exception.\n\nLeakage concentrates geographically and commercially: Kisii depot alone accounts for KES 135.8M, and Baraka Downstream is the single largest customer-level exposure at KES 55.9M. This concentration means targeted intervention -- not a broad program -- closes most of the gap.\n\nRecommended near-term actions, in priority order: (1) Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms. (2) Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out.\n\nBusiness case (phased rollout, 35% of full network live in year one): KES 1.18B recovered against an estimated KES 75.0M year-one build cost -- payback in 0.8 months, a 15.8x first-year return. At steady state (full network live), the same recovery assumptions imply KES 3.38B per year.\n\n*Note: All KES figures are illustrative: they are computed by scaling a 45-day synthetic simulation (calibrated to plausible KPC depot volumes and ex-depot pricing, not live operational data) up to an annual run-rate. Treat them as a directional sizing of the opportunity, and re-run this same pipeline against real KPC extracts before using any number here in a board-level business case.*",
+  "alert_narratives": [
+    {
+      "loading_id": "LD000624",
+      "depot": "Nakuru",
+      "customer": "Lakeview Energy",
+      "leakage_category": "collections_gap",
+      "total_leakage_kes": 8737680.18,
+      "narrative": "Loading LD000624 at Nakuru (Lakeview Energy, PMS): collections shortfalls of KES 8.7M detected. Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms."
+    },
+    {
+      "loading_id": "LD002826",
+      "depot": "Kisii",
+      "customer": "Summit Downstream Ltd",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5908350.0,
+      "narrative": "Loading LD002826 at Kisii (Summit Downstream Ltd, PMS): dispatch capture gaps of KES 5.9M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    },
+    {
+      "loading_id": "LD002392",
+      "depot": "Kisumu",
+      "customer": "Zenith Petroleum",
+      "leakage_category": "collections_gap",
+      "total_leakage_kes": 5776676.26,
+      "narrative": "Loading LD002392 at Kisumu (Zenith Petroleum, PMS): collections shortfalls of KES 5.8M detected. Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms."
+    },
+    {
+      "loading_id": "LD000669",
+      "depot": "Kisumu",
+      "customer": "Savannah Petroleum",
+      "leakage_category": "billing_gap",
+      "total_leakage_kes": 5680953.0,
+      "narrative": "Loading LD000669 at Kisumu (Savannah Petroleum, PMS): billing gaps of KES 5.7M detected. Add a same-day dispatch-to-invoice matching check so no confirmed dispatch goes unbilled past 24 hours."
+    },
+    {
+      "loading_id": "LD001397",
+      "depot": "Nairobi",
+      "customer": "Horizon Oil Marketers",
+      "leakage_category": "billing_gap",
+      "total_leakage_kes": 5649508.0,
+      "narrative": "Loading LD001397 at Nairobi (Horizon Oil Marketers, PMS): billing gaps of KES 5.6M detected. Add a same-day dispatch-to-invoice matching check so no confirmed dispatch goes unbilled past 24 hours."
+    },
+    {
+      "loading_id": "LD000415",
+      "depot": "Kisumu",
+      "customer": "Nyanza Petroleum Co",
+      "leakage_category": "collections_gap",
+      "total_leakage_kes": 5620156.51,
+      "narrative": "Loading LD000415 at Kisumu (Nyanza Petroleum Co, PMS): collections shortfalls of KES 5.6M detected. Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms."
+    },
+    {
+      "loading_id": "LD001011",
+      "depot": "Nairobi",
+      "customer": "Lakeview Energy",
+      "leakage_category": "billing_gap",
+      "total_leakage_kes": 5573543.5,
+      "narrative": "Loading LD001011 at Nairobi (Lakeview Energy, PMS): billing gaps of KES 5.6M detected. Add a same-day dispatch-to-invoice matching check so no confirmed dispatch goes unbilled past 24 hours."
+    },
+    {
+      "loading_id": "LD002411",
+      "depot": "Eldoret",
+      "customer": "Pioneer Fuels Kenya",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5560800.0,
+      "narrative": "Loading LD002411 at Eldoret (Pioneer Fuels Kenya, PMS): dispatch capture gaps of KES 5.6M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    },
+    {
+      "loading_id": "LD000027",
+      "depot": "Kisumu",
+      "customer": "Uhuru Energy Partners",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5560800.0,
+      "narrative": "Loading LD000027 at Kisumu (Uhuru Energy Partners, PMS): dispatch capture gaps of KES 5.6M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    },
+    {
+      "loading_id": "LD001984",
+      "depot": "Kisii",
+      "customer": "Zenith Petroleum",
+      "leakage_category": "collections_gap",
+      "total_leakage_kes": 5556866.58,
+      "narrative": "Loading LD001984 at Kisii (Zenith Petroleum, PMS): collections shortfalls of KES 5.6M detected. Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms."
+    },
+    {
+      "loading_id": "LD001897",
+      "depot": "Kisumu",
+      "customer": "Tsavo Energy Group",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5540640.0,
+      "narrative": "Loading LD001897 at Kisumu (Tsavo Energy Group, AGO): dispatch capture gaps of KES 5.5M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    },
+    {
+      "loading_id": "LD000875",
+      "depot": "Mombasa",
+      "customer": "Baraka Downstream",
+      "leakage_category": "billing_gap",
+      "total_leakage_kes": 5527448.0,
+      "narrative": "Loading LD000875 at Mombasa (Baraka Downstream, AGO): billing gaps of KES 5.5M detected. Add a same-day dispatch-to-invoice matching check so no confirmed dispatch goes unbilled past 24 hours."
+    },
+    {
+      "loading_id": "LD000007",
+      "depot": "Mombasa",
+      "customer": "Nyanza Petroleum Co",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5525120.0,
+      "narrative": "Loading LD000007 at Mombasa (Nyanza Petroleum Co, AGO): dispatch capture gaps of KES 5.5M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    },
+    {
+      "loading_id": "LD001454",
+      "depot": "Mombasa",
+      "customer": "Coastline Energy Ltd",
+      "leakage_category": "collections_gap",
+      "total_leakage_kes": 5523477.88,
+      "narrative": "Loading LD001454 at Mombasa (Coastline Energy Ltd, PMS): collections shortfalls of KES 5.5M detected. Introduce automated AR aging alerts and a dunning workflow for invoices unpaid beyond terms."
+    },
+    {
+      "loading_id": "LD001910",
+      "depot": "Nakuru",
+      "customer": "Baraka Downstream",
+      "leakage_category": "dispatch_capture_gap",
+      "total_leakage_kes": 5509600.0,
+      "narrative": "Loading LD001910 at Nakuru (Baraka Downstream, AGO): dispatch capture gaps of KES 5.5M detected. Automate gate/dispatch confirmation capture so every loading has a matching dispatch record before it can be closed out."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "run_at": "2026-07-24T03:46:51.541057+00:00",
+  "status": "SUCCESS",
+  "duration_seconds": 2.03,
+  "row_counts_raw": {
+    "loading_events": 2826,
+    "dispatch_events": 2787,
+    "invoices": 2757,
+    "payments": 2713
+  },
+  "row_counts_clean": {
+    "loading_events": 2826,
+    "dispatch_events": 2787,
+    "invoices": 2757,
+    "payments": 2713
+  },
+  "quality_gate_status": "PASS",
+  "total_leakage_kes": 689140806.0234821,
+  "exception_count": 290
+}

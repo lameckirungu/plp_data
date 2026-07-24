@@ -1,0 +1,4 @@
+table,check,severity,count,detail
+loading_events,missing_customer,warning,29,
+invoices,missing_unit_price_backfilled,warning,74,
+invoices,dispatch_with_multiple_invoices,exception,64,
