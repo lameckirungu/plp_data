@@ -1,4 +1,4 @@
-.PHONY: setup generate-data pipeline test lint dashboard docker-build docker-run docker-stop
+.PHONY: setup generate-data pipeline test lint web-install web-dev web-build api-dev docker-build docker-run docker-stop
 
 VENV := venv/bin
 
@@ -17,10 +17,22 @@ test:
 	$(VENV)/pytest -v
 
 lint:
-	$(VENV)/ruff check src/ tests/ scripts/ app/
+	$(VENV)/ruff check src/ tests/ scripts/ api/
+	cd web && npm run lint
 
-dashboard:
-	$(VENV)/streamlit run app/dashboard.py
+web-install:
+	cd web && npm install
+
+web-dev:
+	cd web && npm run dev
+
+web-build:
+	cd web && npm run build
+
+# Backend dev server, port 8010 (not 8000 -- avoids a common local conflict).
+# The Vite dev server (web-dev) proxies /api to this.
+api-dev:
+	$(VENV)/uvicorn api.main:app --reload --port 8010
 
 docker-build:
 	docker build -t o2c-dashboard:latest .
