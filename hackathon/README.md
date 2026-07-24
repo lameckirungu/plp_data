@@ -44,33 +44,50 @@ flowchart LR
     reconcile --> roi --> narrative --> Outputs
     reconcile --> report --> png
 
-    Outputs --> dashboard["app/dashboard.py\n(Streamlit + Plotly)"]
-    dashboard -.re-run.-> Pipeline
+    Outputs --> api["api/main.py\n(FastAPI)"]
+    api --> web["web/\n(React + TS + Tailwind + Recharts)"]
+    web -.re-run.-> Pipeline
 ```
 
-CI (`.github/workflows/ci.yml`) runs lint → regenerate data → tests → pipeline (the
-quality gate must pass) on every push, then builds and health-checks the Docker image.
+**Two services, one container in production.** `api/` is a FastAPI backend exposing the
+pipeline's output as JSON (`/api/kpis`, `/api/exceptions`, `/api/roi`, `/api/narrative`,
+`/api/data-quality`, `POST /api/pipeline/run`, ...). `web/` is a real single-page app —
+Vite + React 19 + TypeScript + Tailwind v4 + Recharts, not a Python dashboard framework —
+with live filters, an exceptions/audit-trail table, an ROI & business-case view, and a
+data-quality panel. In Docker, the frontend is built to static assets and served by the
+same FastAPI process; in local dev they run as two processes (`make api-dev` +
+`make web-dev`) with Vite proxying `/api` to the backend.
+
+CI (`.github/workflows/ci.yml`) runs three jobs on every push: Python lint/test/quality-gate,
+frontend type-check/lint/build, then a Docker build that smoke-tests both `/api/health` and
+`/` before passing.
 
 ## Quickstart
 
 ```bash
-make setup          # venv + editable install (pandas, pandera, streamlit, plotly, ...)
+make setup          # venv + editable install (pandas, pandera, fastapi, uvicorn, ...)
 make generate-data   # synthetic-but-messy KPC exports -> data/raw/ (deterministic, seed=42)
 make pipeline        # ingest -> clean -> quality gate -> reconcile -> reports/
-make test            # 19 unit + integration tests
-make lint            # ruff
-make dashboard       # streamlit dashboard at http://localhost:8501
+make test            # 31 unit + integration tests (pipeline + API)
+make lint             # ruff (python) + oxlint (frontend)
 ```
 
-Or containerized:
+Then, in two terminals:
 
 ```bash
-make docker-run      # docker compose up --build -> http://localhost:8501
+make api-dev         # FastAPI backend  -> http://localhost:8010
+make web-install && make web-dev   # React dashboard -> http://localhost:5173
 ```
 
-The dashboard's "Re-run pipeline" button calls the exact same `run_pipeline()` entry
-point as `make pipeline` and the CI job — there is one pipeline, not a demo copy and a
-real one.
+Or containerized (single service, frontend pre-built):
+
+```bash
+make docker-run      # docker compose up --build -> http://localhost:8020
+```
+
+The dashboard's "Re-run pipeline" button calls `POST /api/pipeline/run`, which calls the
+exact same `run_pipeline()` entry point as `make pipeline` and the CI job — there is one
+pipeline, not a demo copy and a real one.
 
 ## What the pipeline finds
 
@@ -108,14 +125,15 @@ and an ROI model (with explicit, adjustable recovery-rate assumptions per catego
 
 ```
 src/o2c_pipeline/   ingest, clean, quality, reconcile, roi, narrative, report, pipeline
-app/dashboard.py     Streamlit executive dashboard (filters, exceptions, ROI, DQ tabs)
+api/                 FastAPI backend (kpis, trend, exceptions, roi, narrative, dq, re-run)
+web/                 React + TypeScript + Tailwind + Recharts dashboard
 scripts/             synthetic data generator + PDF memo renderer
-tests/                19 pytest tests (cleaning, quality gate, reconciliation math, e2e)
+tests/                31 pytest tests (cleaning, quality gate, reconciliation math, API, e2e)
 data/raw/            committed synthetic source exports (deterministic, seed=42)
 data/processed/      pipeline output (reconciled dataset, DQ issue log)
 reports/              summary JSON, chart, memo, pipeline run log
-.github/workflows/    CI: lint, test, quality gate, Docker build + health check
-Dockerfile, docker-compose.yml   containerized, health-checked deployment
+.github/workflows/    CI: python + frontend lint/test/build, Docker build + health check
+Dockerfile, docker-compose.yml   multi-stage build; one container serves API + frontend
 ```
 
 ## Roadmap
