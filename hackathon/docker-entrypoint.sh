@@ -7,9 +7,5 @@ set -e
 echo "Running order-to-cash pipeline (ingest -> clean -> quality gate -> reconcile)..."
 python -m o2c_pipeline.pipeline
 
-echo "Starting dashboard..."
-exec streamlit run app/dashboard.py \
-  --server.address=0.0.0.0 \
-  --server.port=8501 \
-  --server.headless=true \
-  --browser.gatherUsageStats=false
+echo "Starting API + dashboard on :8000..."
+exec uvicorn api.main:app --host 0.0.0.0 --port 8000

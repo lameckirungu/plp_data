@@ -6,3 +6,6 @@ __pycache__/
 *.egg-info/
 .git/
 Inuka_Hackathon_Problem_Statement.pdf
+web/node_modules/
+web/dist/
+tests/
