@@ -62,6 +62,12 @@ desktop.ini
 !/hackathon/data/processed/*.csv
 !/hackathon/reports/*.json
 
+# Hackathon: track frontend config (package.json, package-lock.json,
+# tsconfig*.json) -- without these the web/ app can't even be installed.
+# node_modules/ and dist/ stay ignored via web/.gitignore and the `dist/`
+# rule above, so this can't accidentally pull build output back in.
+!/hackathon/web/**/*.json
+
 # Logs and temp
 *.log
 *.tmp
