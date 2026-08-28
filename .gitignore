@@ -57,6 +57,9 @@ desktop.ini
 !/week3/*.csv
 !/week3/*.db
 
+# Week 10 PumpGuard Ops: committed synthetic training and demo telemetry.
+!/week10/week10_ops_tool/data/*.csv
+
 # Hackathon: track committed synthetic source data and pipeline evidence
 !/hackathon/data/raw/*.csv
 !/hackathon/data/processed/*.csv
