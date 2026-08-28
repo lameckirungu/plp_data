@@ -50,7 +50,9 @@ plp_data/
 | 6 | Statistical validation, feature engineering & predictive maintenance (logistic + linear regression) | [week6_stats_and_pdm.ipynb](week6/week6_stats_and_pdm.ipynb) | [Week6_Communication_Briefs_Lameck.pdf](week6/Week6_Communication_Briefs_Lameck.pdf) |
 | 7 | Safety Command Center — Streamlit dashboard over 445 real HSE incident records | [app_safety_dashboard.py](week7/app_safety_dashboard.py) | [Week7_Safety_Alert_Lameck.pdf](week7/Week7_Safety_Alert_Lameck.pdf) |
 | 8 | Supply chain & logistics optimization, data storytelling | [week8_supply_chain_optimization.ipynb](week8/week8_supply_chain_optimization.ipynb) | [Week8_Ops_Review_Lameck.pdf](week8/Week8_Ops_Review_Lameck.pdf) |
-| 9–12 | *(in progress)* | — | — |
+| 9 | Operational machine learning — XGBoost, threshold tuning, and SHAP explainability | [week9_operational_ml.ipynb](week9/week9_operational_ml.ipynb) | [Week9_Model_Explainer_LameckMugo.pdf](week9/Week9_Model_Explainer_LameckMugo.pdf) |
+| 10 | PumpGuard Ops — AI-assisted predictive-maintenance triage dashboard | [week10_ops_tool](week10/week10_ops_tool/) | [Product demo script](week10/week10_ops_tool/Week10_Product_Demo_LameckMugo_script.md) |
+| 11–12 | *(in progress)* | — | — |
 
 ---
 
