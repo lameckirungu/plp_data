@@ -1,0 +1,7 @@
+streamlit==1.62.0
+pandas==3.0.5
+scikit-learn==1.9.0
+imbalanced-learn==0.14.2
+xgboost-cpu==3.4.1; platform_machine == "x86_64" and sys_platform == "linux"
+xgboost==3.4.1; platform_machine != "x86_64" or sys_platform != "linux"
+python-dotenv==1.2.3

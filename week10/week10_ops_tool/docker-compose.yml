@@ -1,0 +1,11 @@
+services:
+  pumpguard:
+    platform: linux/amd64
+    build: .
+    image: pumpguard-ops:week10
+    ports:
+      - "8501:8501"
+    env_file:
+      - path: .env
+        required: false
+    restart: unless-stopped
