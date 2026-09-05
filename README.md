@@ -14,6 +14,16 @@ The skills developed here are industry-agnostic — the same logic applied to pi
 
 Alongside the weekly coursework, `hackathon/` holds my submission to the **Inuka Hackathon** — a full order-to-cash revenue-leakage reconciliation pipeline with a FastAPI backend and React dashboard, built on the same KPC operational domain. See [Capstone: Inuka Hackathon](#capstone-inuka-hackathon) below.
 
+## Featured Projects
+
+| Project | Operational problem | Evidence |
+|---|---|---|
+| [KPC Order-to-Cash Leakage Reconciliation](hackathon/) | Finds and values revenue leakage from loading through payment | Python ETL, data-quality gate, FastAPI, React, Docker, CI, 31 tests |
+| [PumpGuard Ops](week10/week10_ops_tool/) | Prioritizes pumps for maintenance review using seven-day failure risk | 2,496 synthetic readings, grouped ROC-AUC 0.943, 13 tests, Streamlit |
+| [Safety Command Center](week7/) | Makes depot safety patterns and potential-SIF events visible to HSE teams | 445 incidents, reactive dashboard, alerting, downloadable action data |
+
+All numerical results are labelled as real supplied data, synthetic demonstrations, or planning assumptions in the relevant project documentation.
+
 ---
 
 ## Repository Structure
@@ -52,7 +62,8 @@ plp_data/
 | 8 | Supply chain & logistics optimization, data storytelling | [week8_supply_chain_optimization.ipynb](week8/week8_supply_chain_optimization.ipynb) | [Week8_Ops_Review_Lameck.pdf](week8/Week8_Ops_Review_Lameck.pdf) |
 | 9 | Operational machine learning — XGBoost, threshold tuning, and SHAP explainability | [week9_operational_ml.ipynb](week9/week9_operational_ml.ipynb) | [Week9_Model_Explainer_LameckMugo.pdf](week9/Week9_Model_Explainer_LameckMugo.pdf) |
 | 10 | PumpGuard Ops — AI-assisted predictive-maintenance triage dashboard | [week10_ops_tool](week10/week10_ops_tool/) | [Product demo script](week10/week10_ops_tool/Week10_Product_Demo_LameckMugo_script.md) |
-| 11–12 | *(in progress)* | — | — |
+| 11 | Analytics strategy, ROI and professional readiness | [Week 11 package](week11/) | [Business case](week11/Week11_Business_Case_LameckIrungu.pdf) |
+| 12 | *(in progress)* | — | — |
 
 ---
 

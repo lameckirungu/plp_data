@@ -1,5 +1,15 @@
 # Week 7 — Safety Command Center Dashboard & Crisis Communication
 
+An interactive Streamlit command center for HSE teams to monitor incidents, isolate risk patterns, and export an action-ready incident list. One filtered dataframe drives every KPI and chart, so the dashboard cannot display conflicting views of the same selection.
+
+## Portfolio Snapshot
+
+- **Problem:** static incident logs make emerging depot-level safety patterns difficult to spot.
+- **Solution:** a reactive dashboard with site, date, incident-type and department filters, critical-event alerts, trend views and CSV export.
+- **Scope:** 445 supplied incident records across seven Kenyan depots, January–June 2026.
+- **Decision insight:** Mombasa recorded 12 chemical-exposure incidents; 8 were flagged as potential serious injury or fatality (66.7%).
+- **Limits:** the dashboard describes recorded incidents; it does not establish causality or predict future incidents.
+
 ---
 
 ## Data Source
@@ -57,4 +67,13 @@ average of the other six depots — and 8 of those 12 (66.7%) were flagged with 
 for Serious Injury or Fatality**, a far higher share than the rest of the network. This
 finding drives both the safety alert PDF and the role-play script.
 
+
+## Data and Interpretation Notes
+
+- Counts reflect the supplied log and may be affected by reporting completeness.
+- “Potential SIF” is a recorded flag, not a confirmed outcome.
+- The Mombasa comparison is descriptive and should trigger investigation, not a causal conclusion.
+- No credentials or external service keys are required.
+
+Built by **Lameck Irungu** as part of the PLP Data Analytics Fellowship.
 
