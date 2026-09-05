@@ -24,9 +24,4 @@ PumpGuard Ops is proposed as a gated 12-month pilot covering 24 pumps.
 
 The financial figures are pilot-planning assumptions, not actual KPC results. Deployment is conditional on a data audit, a 90-day shadow validation, at least 80% recall, and a false-positive rate below 5% on real pilot data.
 
-## LMS Items Requiring Manual Completion
 
-1. Record and upload `Week11_Mock_Interview.mp4`.
-2. Update LinkedIn using the prepared copy and submit the updated profile screenshot and URL.
-3. Revise the reflection if necessary so it matches the recorded interview.
-4. Submit the Hackathon #3 team code, business case, and pitch recording.
