@@ -1,0 +1,7 @@
+# Mock Interview Self-Reflection
+
+During my mock interview, I explained my operational analytics portfolio and connected technical choices to business decisions. My strongest answers used the STAR method. In the data-quality example, I distinguished structural defects that stop the reconciliation pipeline from genuine invoice and payment gaps that the analysis must measure. I described my actions: grouped model validation, threshold tuning and documenting assumptions. This made my examples credible.
+
+I communicated the limits of my work. I stated that PumpGuard's performance came from synthetic data and avoided presenting the pilot's financial assumptions as realized savings. I explained why engineers retain maintenance decisions. These points demonstrated responsible analysis and awareness of risk.
+
+I need to improve concision and delivery. Some technical answers contained too many implementation details before stating the outcome. In future interviews, I will lead with the result, limit each STAR answer to two minutes, and pause before adding supporting detail. I will also vary my pace, maintain steadier eye contact, and replace filler words with brief silence. Before my next interview, I will rehearse five core stories aloud, record two timed practice rounds, and prepare one clarifying question for each technical case. This should make my answers more confident, focused, and relevant.
